@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
@@ -43,5 +43,34 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+</style> -->
+
+<template>
+  <div id="app">
+    <LoginPage />
+  </div>
+</template>
+
+<script>
+import LoginPage from './components/loginpage.vue'
+
+export default {
+  name: 'App',
+  components: {
+    LoginPage
+  }
+}
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
 }
 </style>
