@@ -4,8 +4,8 @@
       <div class="login-card">
         <!-- Left Section -->
         <div class="welcome-section">
-          <h1>Welcome to website</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <h1>Welcome to ...</h1>
+          <p>Your Complete School Management Solution.</p>
         </div>
         
         <!-- Right Section -->
