@@ -8,6 +8,10 @@
       <div class="welcome-section slide-in-left">
         <h1>Welcome to ...</h1>
         <p>Your Complete School Management Solution.</p>
+
+        <div class="svg-container">
+          <img src="@/assets/images/happy-student.svg" alt="Happy Students" class="animated-svg">
+        </div>
       </div>
 
       <!-- Right Section -->

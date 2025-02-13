@@ -74,7 +74,7 @@
 
 .welcome-section h1 {
   font-size: 2.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
@@ -229,25 +229,153 @@ input[type="password"]:focus {
   }
 }
 
+
+
+
+.svg-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Increased from 400px for wider image */
+  margin: 1rem auto 0; /* Reduced top margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 2rem; /* Adds space at bottom */
+}
+
+.animated-svg {
+  width: 100%;
+  height: auto;
+  max-height: 350px; /* Increased from 300px */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
 /* Responsive Design */
-@media (max-width: 968px) {
+@media (max-width: 1024px) and (max-height: 655px) {
+  .login-card {
+    flex-direction: column;
+    min-height: auto;
+    width: 90%;
+    align-items: center;
+  }
+  .welcome-section {
+    padding: 40px 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .login-section {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .svg-container {
+    max-width: 350px;
+    margin: 0 auto 20px;
+  }
+  .animated-svg {
+    max-height: 280px;
+  }
+  .login-btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .login-container {
     padding: 20px;
   }
-  
   .login-card {
-    width: 95%;
+    width: 100%;
+    border-radius: 10px;
     flex-direction: column;
+    align-items: center;
   }
-  
-  .welcome-section,
-  .login-section {
-    padding: 40px 30px;
-    flex: none;
+  .welcome-section, .login-section {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
   }
-  
   .welcome-section h1 {
     font-size: 2rem;
   }
+  .welcome-section p {
+    font-size: 1rem;
+  }
+  .login-section h2 {
+    font-size: 1.5rem;
+  }
+  .svg-container {
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+  .animated-svg {
+    max-height: 250px;
+  }
+  .login-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .input-with-icon {
+    position: relative;
+    width: 100%;
+  }
+  .input-with-icon i {
+    left: 10px;
+    font-size: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input[type="text"],
+  input[type="password"] {
+    padding-left: 35px;
+  }
 }
+
+@media (max-width: 480px) {
+  .login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome-section, .login-section {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+  }
+  .login-btn {
+    font-size: 0.9rem;
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .input-with-icon {
+    position: relative;
+    width: 100%;
+  }
+  .input-with-icon i {
+    font-size: 1rem;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input[type="text"],
+  input[type="password"] {
+    font-size: 0.9rem;
+    padding: 12px 12px 12px 35px;
+  }
+  .svg-container {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+  .animated-svg {
+    max-height: 200px;
+  }
+}
+
 
